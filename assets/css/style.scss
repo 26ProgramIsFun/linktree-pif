@@ -29,10 +29,12 @@ body {
 
 .name {
     margin-top: 15px !important;
+    font-size: x-large;
 }
 
 .logo {
     transition: 1s;
+    width: 250px;
 }
 
 .logo:hover {
@@ -40,14 +42,14 @@ body {
 }
 
 .pif-theme-d3 {
-    background-color: #00000021 !important;
+    background-color: rgba(0, 0, 0, 0.1294117647) !important;
     transition: 0.3s;
 }
 
 .pif-theme-d3:hover {
     color: #fff !important;
     transform: scale(1.2);
-    background-color: #000000fb !important;
+    background-color: rgba(0, 0, 0, 0.9843137255) !important;
 }
 
 a {
@@ -98,6 +100,10 @@ a {
     width: 100% !important;
 }
 
+.submit form input::-moz-placeholder {
+    color: #fff;
+}
+
 .submit form input::placeholder {
     color: #fff;
 }
@@ -135,7 +141,7 @@ a {
     }
 
     a {
-        font-size: 3vw !important;
+        font-size: 4vw !important;
     }
 }
 
@@ -149,7 +155,7 @@ a {
     }
 
     .name {
-        font-size: 4vw;
+        font-size: 4vw !important;
     }
 
     a {
@@ -169,5 +175,16 @@ a {
     .links-container a {
         min-width: unset;
         max-width: unset;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .name {
+        font-size: 4vw;
+    }
+
+    .logo {
+        transition: 1s;
+        width: 150px;
     }
 }

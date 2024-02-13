@@ -29,10 +29,12 @@ body {
 
 .name {
   margin-top: 15px !important;
+  font-size: x-large;
 }
 
 .logo {
   transition: 1s;
+  width: 250px;
 }
 
 .logo:hover {
@@ -132,46 +134,46 @@ a {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 767px) {
   .profession {
     font-size: 3.5vw !important;
   }
-
   a {
-    font-size: 3vw !important;
+    font-size: 4vw !important;
   }
 }
-
 @media screen and (max-width: 500px) {
   .container {
     max-width: 540px;
   }
-
   .profession {
     font-size: 4vw;
   }
-
   .name {
-    font-size: 4vw;
+    font-size: 4vw !important;
   }
-
   a {
     font-size: 3.5vw;
   }
-
   .icons {
     display: flex;
     justify-content: space-around;
     gap: 40px;
   }
-
   .icons a {
     font-size: 4vw;
   }
-
   .links-container a {
     min-width: unset;
     max-width: unset;
   }
 }
+@media screen and (max-width: 400px) {
+  .name {
+    font-size: 4vw;
+  }
+  .logo {
+    transition: 1s;
+    width: 150px;
+  }
+}/*# sourceMappingURL=style.css.map */
